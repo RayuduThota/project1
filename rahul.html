@@ -4,7 +4,21 @@
 <head>
     <link rel="stylesheet" href="rahul.css">
     <title>Project 1</title>
+    <script>
+        var i = 0;
 
+        function change() {
+            var doc = document.getElementsByClassName("footer");
+            var col = ["white", "blue", "green", "green", "red", "black", "brown"];
+            doc[0].style.color = col[i];
+            console.log(i);
+            i++;
+            if (i > col.length - 1) {
+                i = 0;
+            }
+        }
+        setInterval(change, 5000);
+    </script>
 
 </head>
 
@@ -13,7 +27,7 @@
         <div class="shape" id="square"></div>
         <div class="shape" id="rectangle"></div>
         <div class="shape" id="circle"></div>
-        <div id="footer">RahulThota</div>
+        <div class="footer">RahulThota</div>
     </div>
 </body>
 

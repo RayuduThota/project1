@@ -35,10 +35,10 @@ body {
     margin-bottom: 150px;
 }
 
-#footer {
+.footer {
     font-size: 30px;
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
 }
@@ -67,17 +67,9 @@ body {
     #square {
         height: 280px;
     }
-}
-
-#footer {
-    animation: change 5s step-end both;
-}
-
-@keyframes change {
-    from {
-        color: green;
-    }
-    to {
-        color: blue;
+    .footer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
     }
 }

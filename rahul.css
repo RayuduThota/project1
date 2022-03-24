@@ -50,6 +50,11 @@ body {
     #square {
         height: 300px;
     }
+    .footer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
 }
 
 @media only screen and (device-width:731px) and (device-height:411px) {
@@ -58,14 +63,15 @@ body {
         margin-bottom: 150px;
     }
     #circle {
-        height: 250px;
-        width: 27%;
+        height: 360px;
+        width: 35%;
         position: absolute;
         top: 0px;
         right: 0px;
     }
     #square {
-        height: 280px;
+        width: 20%;
+        height: 180px;
     }
     .footer {
         bottom: 0;
